@@ -1,0 +1,21 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+group 'com.alphaolomi'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+mainClassName = 'Main'
+
+dependencies {
+    implementation 'com.formdev:flatlaf:0.41'
+    compile "joda-time:joda-time:2.2"
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
