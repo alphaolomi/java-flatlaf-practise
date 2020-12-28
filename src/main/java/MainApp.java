@@ -8,6 +8,7 @@ public class MainApp {
         } catch (Exception ex) {
             System.err.println("Failed to initialize LaF");
         }
+
         // create UI here...
         GUIJFrame frame = new GUIJFrame();
         frame.setTitle("Campus IT Asset Manager");
